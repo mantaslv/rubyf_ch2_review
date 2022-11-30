@@ -1,0 +1,95 @@
+Last login: Wed Nov 30 11:09:20 on ttys000
+➜  ~ irb
+3.0.0 :001 > emptyArr = []
+ => [] 
+3.0.0 :002 > arr = [1,2,3,4,5]
+ => [1, 2, 3, 4, 5] 
+3.0.0 :003 > arr << 6
+ => [1, 2, 3, 4, 5, 6] 
+3.0.0 :004 > arr[6] = 7
+ => 7 
+3.0.0 :005 > arr
+ => [1, 2, 3, 4, 5, 6, 7] 
+3.0.0 :006 > #question 2
+ => nil 
+3.0.0 :007 > me = {
+3.0.0 :008 >   "name" => "mantas",
+3.0.0 :009 >   "age" => 27
+3.0.0 :010 > }
+ => {"name"=>"mantas", "age"=>27} 
+3.0.0 :011 > me["fave language"] = "ruby"
+ => "ruby" 
+3.0.0 :012 > me
+ => {"name"=>"mantas", "age"=>27, "fave language"=>"ruby"} 
+3.0.0 :013 > stillMe = {
+3.0.0 :014 >   name: "mantas",
+3.0.0 :015 >   age: 27
+3.0.0 :016 > }
+ => {:name=>"mantas", :age=>27} 
+3.0.0 :017 > stillMe[:fave_language] = "ruby"
+ => "ruby" 
+3.0.0 :018 > stillMe
+ => {:name=>"mantas", :age=>27, :fave_language=>"ruby"} 
+3.0.0 :019 > 
+3.0.0 :020 > #question 3 - two differences between arrays and hashes
+ => nil 
+3.0.0 :021 > #array is an ordered list of things whereas hashes are a collection of key/value pairs
+ => nil 
+3.0.0 :022 > #access values in arrays by numerical index i.e.
+ => nil 
+3.0.0 :023 > arr[3]
+ => 4 
+3.0.0 :024 > #access values in hashes by key i.e.
+ => nil 
+3.0.0 :025 > stillMe[:name]
+ => "mantas" 
+3.0.0 :026 > 
+3.0.0 :027 > #question 4 - define class
+ => nil 
+3.0.0 :028 > #a class is like a template of variables and methods for a particular kind of object
+ => nil 
+3.0.0 :029 > 
+3.0.0 :030 > #question 5 - difference between class and instance of a class
+ => nil 
+3.0.0 :031 > #class: blueprint of what an object should look like
+ => nil 
+3.0.0 :032 > #instance: the object to be built
+ => nil 
+3.0.0 :033 > #for example this is a class:
+ => nil 
+3.0.0 :034 > class Pokemon
+3.0.0 :035 >   def initialize(species, type, hp)
+3.0.0 :036 >     @species = species
+3.0.0 :037 >     @type = type
+3.0.0 :038 >     @hp = hp
+3.0.0 :039 >   end
+3.0.0 :040 > end
+ => :initialize 
+3.0.0 :041 > #for example this is an instance of a class:
+ => nil 
+3.0.0 :042 > pikachu = Pokemon.new("mouse", "electric", 40)
+ => #<Pokemon:0x00007fe13c9090a0 @species="mouse", @type="electric", @hp=40> 
+3.0.0 :043 > 
+3.0.0 :044 > #question 6 - scope definition
+ => nil 
+3.0.0 :045 > #scope is the visibility of a variable relating to where you are in the code for example if you are in or outside of 
+a class
+ => nil 
+3.0.0 :046 > #for example the single @ placed before a variable in the pokemon class means the value is local to a specific
+ => nil 
+3.0.0 :047 > #instance of an object
+ => nil 
+3.0.0 :048 > 
+
+
+
+
+
+
+
+
+
+
+
+
+
